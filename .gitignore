@@ -9,7 +9,6 @@ node_modules/
 
 # 配置文件全部忽略
 eslint.config.js
-index.html
 tsconfig.app.json
 tsconfig.node.json
 tsconfig.tsbuildinfo

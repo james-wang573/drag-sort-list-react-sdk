@@ -18,8 +18,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "demo": "vite build --config vite.demo.config.ts --base=/drag-sort-list-react-sdk/",
-  "predeploy": "npm run demo",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run demo",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.24",
