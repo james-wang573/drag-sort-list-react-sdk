@@ -17,6 +17,7 @@ tsconfig.json
 package-lock.json
 temp-types
 vite.config.ts
+vite.demo.config.ts
 
 # --------------- 只允许---------------
 !.gitignore

@@ -104,4 +104,3 @@ import { DragSortList } from 'drag-sort-list-react-sdk';
         </DragSortList>
       </div>
     </div>
-```tsx
