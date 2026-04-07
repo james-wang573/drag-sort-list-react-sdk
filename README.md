@@ -2,7 +2,7 @@
 React 拖拽排序列表组件
 
 ## 在线演示
-[https://你的用户名.github.io/你的仓库名/](https://你的用户名.github.io/你的仓库名/)
+https://james-wang573.github.io/drag-sort-list-react-sdk/
 
 ## 安装
 npm install drag-sort-list-react-sdk
