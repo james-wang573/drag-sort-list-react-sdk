@@ -6,7 +6,6 @@ node_modules/
 *.log
 .vscode/
 .idea/
-.gitignore
 
 # 配置文件全部忽略
 eslint.config.js
@@ -20,7 +19,7 @@ temp-types
 vite.config.ts
 
 # --------------- 只允许---------------
-
+!.gitignore
 !README.md
 !dist/
 !package.json
