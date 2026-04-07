@@ -41,12 +41,8 @@ export interface PropsTypes {
   /** 随机排序 ID */
   randomSortingId?: string;
 }
-```tsx
 
 ## 使用
-
-```tsx
-
 
 import { useState } from 'react';
 import debounce from 'lodash/debounce';
