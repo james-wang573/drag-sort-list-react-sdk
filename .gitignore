@@ -1,0 +1,25 @@
+# --------------- 强制忽略所有源码和配置 ---------------
+src/
+public/
+node_modules/
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# 配置文件全部忽略
+eslint.config.js
+index.html
+tsconfig.app.json
+tsconfig.node.json
+tsconfig.tsbuildinfo
+tsconfig.json
+package-lock.json
+temp-types
+vite.config.ts
+
+# --------------- 只允许这 4 个东西上传到 GitHub ---------------
+!.gitignore
+!README.md
+!dist/
+!package.json
