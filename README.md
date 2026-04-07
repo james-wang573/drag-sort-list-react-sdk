@@ -1,5 +1,7 @@
 # drag-sort-list-react-sdk
 React 拖拽排序列表组件
+支持，拖拽列表排序、拖拽手柄排序、修改拖动中的元素样式、修改拖动元素时鼠标样式、修改被拖动元素的垫底元素样式、点击按钮随机排序
+等，且使用了 Flip 动画思路实现了拖动排序时的过渡效果，使用 CSS transform 动画减少 DOM 重排重绘，使拖拽移动变得非常丝滑。
 
 ## 在线演示
 https://james-wang573.github.io/drag-sort-list-react-sdk/
