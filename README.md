@@ -41,9 +41,9 @@ export interface PropsTypes {
   /** 随机排序 ID */
   randomSortingId?: string;
 }
-
+```
 ## 使用
-
+```tsx
 import { useState } from 'react';
 import debounce from 'lodash/debounce';
 import DragSortList from '../sort-list';
@@ -203,3 +203,4 @@ const List = () => {
 }
 
 export default List
+```
