@@ -24,5 +24,13 @@
   "peerDependencies": {
     "react": "^18",
     "react-dom": "^18"
-  }
+  },
+  "keywords": [
+    "react",
+    "sort",
+    "drag",
+    "list"
+  ],
+  "author": "wangdaming",
+  "license": "MIT"
 }
