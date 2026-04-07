@@ -1,4 +1,4 @@
-# --------------- 强制忽略所有源码和配置 ---------------
+
 src/
 public/
 node_modules/
@@ -6,6 +6,7 @@ node_modules/
 *.log
 .vscode/
 .idea/
+.gitignore
 
 # 配置文件全部忽略
 eslint.config.js
@@ -18,8 +19,8 @@ package-lock.json
 temp-types
 vite.config.ts
 
-# --------------- 只允许这 4 个东西上传到 GitHub ---------------
-!.gitignore
+# --------------- 只允许---------------
+
 !README.md
 !dist/
 !package.json
