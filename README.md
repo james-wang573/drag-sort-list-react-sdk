@@ -7,9 +7,8 @@ https://james-wang573.github.io/drag-sort-list-react-sdk/
 ## 安装
 npm install drag-sort-list-react-sdk
 
-## 使用
+## 入参
 
-入参说明
 ```tsx
 export interface PropsTypes {
   /** 自定义类名 */
@@ -42,12 +41,73 @@ export interface PropsTypes {
 }
 ```tsx
 
-example
+## 使用
 
 ```tsx
-import { DragSortList } from 'drag-sort-list-react-sdk';
 
-<div className="demos-container">
+
+import { useState } from 'react';
+import debounce from 'lodash/debounce';
+import DragSortList from '../sort-list';
+import BarsOutlined from '../../assets/BarsOutlined.svg'
+import './index.less';
+
+function shortId() {
+  return Date.now().toString(36) + Math.random().toString(36).substring(2);
+}
+
+const List = () => {
+  // 数据中必须有key字段，作为唯一键值
+  // 虽然传入的items父级标签中有key字段，但是这个key不一定是json数据中的字段，所以可能无法绑定对应的数据进行排序。所以要从数据中获取key字段。
+  const [defaultList, setDefaultList] = useState(
+    Array.from({ length: 5 }, (_, i) => ({
+      key: (i + 1).toString(), // 必须有此字段
+      id: i + 1,
+      name: `Item ${i + 1}`,
+    }))
+  );
+  const [listA, setListA] = useState(
+    Array.from({ length: 5 }, (_, i) => ({
+      key: (i + 11).toString(), // 必须有此字段
+      id: i + 11,
+      name: `Item ${i + 1}`,
+    }))
+  );
+  const [listB, setListB] = useState(
+    Array.from({ length: 5 }, (_, i) => ({
+      key: (i + 22).toString(), // 必须有此字段
+      id: i + 22,
+      name: `Item ${i + 1}`,
+    }))
+  );
+  const [listC, setListC] = useState(
+    Array.from({ length: 5 }, (_, i) => ({
+      key: (i + 33).toString(), // 必须有此字段
+      id: i + 33,
+      name: `Item ${i + 1}`,
+    }))
+  );
+
+  const [listD, setListD] = useState(
+    Array.from({ length: 5 }, (_, i) => ({
+      key: (i + 44).toString(), // 必须有此字段
+      id: i + 44,
+      name: `Item ${i + 1}`,
+    }))
+  );
+
+  const [listE, setListE] = useState(
+    Array.from({ length: 5 }, (_, i) => ({
+      key: (i + 55).toString(), // 必须有此字段
+      id: i + 55,
+      name: `Item ${i + 1}`,
+    }))
+  );
+
+  const [randomId, setRandomId] = useState('');
+
+  return (
+    <div className="demos-container">
       <div>
         <h2>{'拖拽列表排序'}</h2>
         <DragSortList items={defaultList} className="demos-list" dragEnd={newList => setDefaultList(newList)}>
@@ -141,3 +201,7 @@ import { DragSortList } from 'drag-sort-list-react-sdk';
         </DragSortList>
       </div>
     </div>
+  );
+}
+
+export default List
